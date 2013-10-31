@@ -1,0 +1,7 @@
+safe: false
+plugins: "./_prebuild"
+assets_dev: false
+markdown: kramdown
+keep_files:
+  - git
+  - assets

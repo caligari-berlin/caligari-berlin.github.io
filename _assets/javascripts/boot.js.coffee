@@ -1,0 +1,3 @@
+jQuery ()->
+  Caligari.MainView.boot()
+
