@@ -1,5 +1,4 @@
 safe: true
-markdown: kramdown
 keep_files:
   - assets
   - .git
