@@ -19,7 +19,7 @@
 (function() {
   this.Caligari.MainView = {
     boot: function() {
-      console.log("booting caligari -- coming soon");
+      console.log("booting caligari -- and really wow!");
       return $.backstretch("/assets/bg.jpg");
     }
   };

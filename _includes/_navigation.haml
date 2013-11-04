@@ -1,5 +1,4 @@
-%navigation.tabbed
-  %ul
-    - pages.each do |page|
-      %li{id: page.data['title'], data: {name: page.name}}
-        %a{href: page.url}= page.data['title']
+%ul
+  - pages.each do |page|
+    %li{id: page.data['title'], data: {name: page.name}}
+      %a{href: page.url}= page.data['title']

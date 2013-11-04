@@ -1,4 +1,4 @@
 @Caligari.MainView =
   boot: ->
-    console.log "booting caligari -- and wow!"
-    $.backstretch("/assets/bg.jpg");
+    console.log "booting caligari -- and really wow!"
+    $.backstretch "/assets/bg.jpg"

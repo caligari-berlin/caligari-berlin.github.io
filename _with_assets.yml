@@ -3,6 +3,7 @@ plugins:
   - _prebuild
   - _jekyll-assets
 assets:
+  dirname: "../assets"
   cachebust: none
   # debug: true
 

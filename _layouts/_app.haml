@@ -3,14 +3,14 @@
   %head
     - if site.assets_dev
       = "{{ 'app' | javascript }}"
+      = "{{ 'app' | stylesheet }}"
       %meta{bg_path: "{% asset_path bg.jpg %}"}
     - else
       = "{% include assets.html %}"
     %title= "Caligari <> {{page.title}}"
   %body
-    #container
-      #header        
-      #content{class: "{{page.title}}"}= "{{content}}"
-      -# #navigation= "{% include navigation.html %}"
-      #footer
-
+    %header
+    #content
+      #page{class: "{{page.path | split: '.' | first }}"}= "{{content}}"
+      %nav#navigation= "{% include navigation.html %}"
+    %footer

@@ -5,10 +5,11 @@
     <title>Caligari <> {{page.title}}</title>
   </head>
   <body>
-    <div id='container'>
-      <div id='header'></div>
-      <div class='{{page.title}}' id='content'>{{content}}</div>
-      <div id='footer'></div>
+    <header></header>
+    <div id='content'>
+      <div class="{{page.path | split: '.' | first }}" id='page'>{{content}}</div>
+      <nav id='navigation'>{% include navigation.html %}</nav>
     </div>
+    <footer></footer>
   </body>
 </html>
