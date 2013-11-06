@@ -48,6 +48,7 @@ GEM
     rack (1.5.2)
     redcarpet (2.3.0)
     safe_yaml (0.7.1)
+    sass (3.2.12)
     sprockets (2.10.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -68,4 +69,5 @@ DEPENDENCIES
   haml
   jekyll-assets
   kramdown
+  sass
   uglifier

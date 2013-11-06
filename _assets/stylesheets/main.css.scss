@@ -1,0 +1,37 @@
+html, body { height: 100%; }
+
+#content {
+  position: relative;
+
+  &.index {
+    width: 35%;
+    // display: table;
+    // border: 1px solid red;
+    height: 100%;
+
+    #page {
+      position: relative;
+      // display: table-cell;
+      // vertical-align: middle;
+
+      height: 95%;
+      width: 90%;
+      margin: 3.5% auto;
+
+      background-image: url("/assets/index-logo.png");
+      background-color: rgba(197,213,177, .42);
+      background-size: 45%;
+      background-repeat: no-repeat;
+      background-position: center 1em;
+      // border: 1px solid green;
+      #text {
+	line-height: 1;
+	position: absolute;
+	width: 100%;
+	bottom: 15%;
+	text-align: center;
+	color: white;
+      }
+    }
+  }
+}

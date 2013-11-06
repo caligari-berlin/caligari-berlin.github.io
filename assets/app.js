@@ -20,7 +20,7 @@
   this.Caligari.MainView = {
     boot: function() {
       console.log("booting caligari -- and really wow!");
-      return $.backstretch("/assets/bg.jpg");
+      return $.backstretch("/assets/index-bg.jpg");
     }
   };
 

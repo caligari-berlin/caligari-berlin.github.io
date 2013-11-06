@@ -4,13 +4,15 @@
     - if site.assets_dev
       = "{{ 'app' | javascript }}"
       = "{{ 'app' | stylesheet }}"
-      %meta{bg_path: "{% asset_path bg.jpg %}"}
+      %meta{bg_path: "{% asset_path index-bg.jpg %}"}
+      %meta{bg_path: "{% asset_path index-logo.png %}"}
     - else
       = "{% include assets.html %}"
     %title= "Caligari <> {{page.title}}"
   %body
     %header
-    #content
-      #page{class: "{{page.path | split: '.' | first }}"}= "{{content}}"
-      %nav#navigation= "{% include navigation.html %}"
+    #content{class: "{{page.path | split: '.' | first }}"}
+      #page
+        #text= "{{content}}"
+      - # %nav#navigation= "{% include navigation.html %}"
     %footer

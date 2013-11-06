@@ -6,9 +6,10 @@
   </head>
   <body>
     <header></header>
-    <div id='content'>
-      <div class="{{page.path | split: '.' | first }}" id='page'>{{content}}</div>
-      <nav id='navigation'>{% include navigation.html %}</nav>
+    <div class="{{page.path | split: '.' | first }}" id='content'>
+      <div id='page'>
+        <div id='text'>{{content}}</div>
+      </div>
     </div>
     <footer></footer>
   </body>
