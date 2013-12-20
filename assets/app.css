@@ -827,31 +827,31 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-html, body {
-  height: 100%; }
-
-#content {
-  position: relative; }
-  #content.index {
-    width: 35%;
-    height: 100%; }
-    #content.index #page {
-      position: relative;
-      height: 95%;
-      width: 90%;
-      margin: 3.5% auto;
-      background-image: url("/assets/index-logo.png");
-      background-color: rgba(197, 213, 177, 0.42);
-      background-size: 45%;
-      background-repeat: no-repeat;
-      background-position: center 1em; }
-      #content.index #page #text {
-        line-height: 1;
-        position: absolute;
-        width: 100%;
-        bottom: 15%;
-        text-align: center;
-        color: white; }
+/* html, body { height: 100%; } */
+#content.index #page {
+  position: relative;
+  padding-bottom: 1em;
+  width: 75%;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("/assets/index-logo.png");
+  background-color: rgba(255, 255, 255, 0.84);
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center 1em; }
+  #content.index #page #text {
+    font-family: sans-serif;
+    line-height: 1.4;
+    color: black; }
+    #content.index #page #text p {
+      text-align: center; }
+      #content.index #page #text p:first-child {
+        font-size: 175%;
+        padding-top: 7em; }
+      #content.index #page #text p:nth-child(2) img {
+        margin: 0 auto;
+        width: 15%; }
 /* Caligari CSS Manifest
  *
 

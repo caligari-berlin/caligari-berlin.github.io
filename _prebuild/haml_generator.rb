@@ -1,6 +1,6 @@
 require "haml"
 require "ostruct"
-require "debugger"
+require "byebug"
 
 module Debug
   def generate

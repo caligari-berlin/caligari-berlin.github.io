@@ -1,37 +1,38 @@
-html, body { height: 100%; }
+/* html, body { height: 100%; } */
 
 #content {
-  position: relative;
+    &.index {
+	#page {
+	    position: relative;
+	    padding-bottom: 1em;
+	    width: 75%;
+	    margin-top: 10%;
+	    margin-left: auto;
+	    margin-right: auto;
 
-  &.index {
-    width: 35%;
-    // display: table;
-    // border: 1px solid red;
-    height: 100%;
-
-    #page {
-      position: relative;
-      // display: table-cell;
-      // vertical-align: middle;
-
-      height: 95%;
-      width: 90%;
-      margin: 3.5% auto;
-
-      background-image: url("/assets/index-logo.png");
-      background-color: rgba(197,213,177, .42);
-      background-size: 45%;
-      background-repeat: no-repeat;
-      background-position: center 1em;
-      // border: 1px solid green;
-      #text {
-	line-height: 1;
-	position: absolute;
-	width: 100%;
-	bottom: 15%;
-	text-align: center;
-	color: white;
-      }
+	    background-image: url("/assets/index-logo.png");
+	    background-color: hsla(360, 100%, 100%, 0.84); //rgba(225, 225, 225, .70);
+	    background-size: 95%;
+	    background-repeat: no-repeat;
+	    background-position: center 1em;
+	    #text {
+		font-family: sans-serif;
+		line-height: 1.4;
+		color: black;
+		p {
+		    text-align: center;
+		    &:first-child {
+			font-size: 175%;
+			padding-top: 7em;
+		    }
+		    &:nth-child(2) {
+			img {
+			    margin: 0 auto;
+			    width: 15%;
+			}
+		    }
+		}
+	    }
+	}
     }
-  }
 }

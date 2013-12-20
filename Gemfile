@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem "debugger"
+gem "jekyll"
+gem "byebug"
 gem "kramdown"
 gem "haml"
 gem "jekyll-assets"

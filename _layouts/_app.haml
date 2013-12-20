@@ -4,8 +4,9 @@
     - if site.assets_dev
       = "{{ 'app' | javascript }}"
       = "{{ 'app' | stylesheet }}"
-      %meta{bg_path: "{% asset_path index-bg.jpg %}"}
-      %meta{bg_path: "{% asset_path index-logo.png %}"}
+      %meta{asset_path: "{% asset_path index-bg.jpg %}"}
+      %meta{asset_path: "{% asset_path index-logo.png %}"}
+      %meta{asset_path: "{% asset_path logo.png %}"}
     - else
       = "{% include assets.html %}"
     %title= "Caligari <> {{page.title}}"
@@ -14,5 +15,4 @@
     #content{class: "{{page.path | split: '.' | first }}"}
       #page
         #text= "{{content}}"
-      - # %nav#navigation= "{% include navigation.html %}"
     %footer
