@@ -1,3 +1,2 @@
-jQuery ()->
-  Caligari.MainView.boot()
-
+jQuery ->
+  Caligari.MainView.load()

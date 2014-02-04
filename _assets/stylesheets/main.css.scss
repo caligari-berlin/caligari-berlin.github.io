@@ -2,6 +2,19 @@
 
 #content {
     &.index {
+	#logo {
+	    display: block;
+	    width: 70em;
+	    height: 20em;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 14em;
+
+	    background-image: url("/assets/HOMElogo.png");
+	    background-repeat: no-repeat;
+	    background-position: center 1em;
+
+	}
 	#page {
 	    position: relative;
 	    padding-bottom: 1em;

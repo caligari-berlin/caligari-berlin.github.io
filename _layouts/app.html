@@ -5,12 +5,6 @@
     <title>Caligari <> {{page.title}}</title>
   </head>
   <body>
-    <header></header>
-    <div class="{{page.path | split: '.' | first }}" id='content'>
-      <div id='page'>
-        <div id='text'>{{content}}</div>
-      </div>
-    </div>
-    <footer></footer>
+    <div class="{{page.path | split: '.' | first }}" data-bg-duration='{{page.bg_duration}}' data-bg-fade='{{page.bg_fade}}' data-bg-images='{{page.bg_images | join }}' id='content'>{{content}}</div>
   </body>
 </html>

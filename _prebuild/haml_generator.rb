@@ -12,15 +12,22 @@ end
 # Jekyll::Site.send :prepend, Debug
 
 module Jekyll
+
+  # Usage:
+  #
+  # $> jekyll serve --watch --config=_config.yml,_prebuild.yml,_with_assets.yml
+  # $> jekyll serve --watch --config=_config.yml,_prebuild.yml
+  # $> jekyll serve --watch --config=_config.yml
+
   class HamlGenerator < Generator
     def self.custom_dirs
       @custom_dirs ||= []
     end
-    
+
     def self.process_directories *dirs
       @custom_dirs = dirs
     end
-    
+
     def generate(site)
       @site = site
       process_directories self.class.custom_dirs + default_dirs
@@ -46,7 +53,7 @@ module Jekyll
         }
       }
     end
-    
+
     def read_haml_files(dir)
       return unless File.exists?(dir)
       entries = []
@@ -83,4 +90,3 @@ module Jekyll
     end
   end
 end
-

@@ -1,4 +1,6 @@
 @Caligari.MainView =
-  boot: ->
+  load: ->
     console.log "booting caligari -- and really wow!"
-    $.backstretch "/assets/index-bg.jpg"
+    page = new Caligari.Page $("#content").attr('class')
+    # nav = new Caligari.Navigation
+    # nav.select(page)
