@@ -828,7 +828,15 @@ table {
     border-spacing: 0;
 }
 /* html, body { height: 100%; } */
-#content.index #logo {
+#content #page {
+  display: block;
+  width: 70em;
+  height: 20em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  background-color: rgba(255, 255, 255, 0.84); }
+#content.home #logo {
   display: block;
   width: 70em;
   height: 20em;
@@ -838,30 +846,24 @@ table {
   background-image: url("/assets/HOMElogo.png");
   background-repeat: no-repeat;
   background-position: center 1em; }
-#content.index #page {
-  position: relative;
-  padding-bottom: 1em;
-  width: 75%;
-  margin-top: 10%;
-  margin-left: auto;
+#content #navigation {
+  margin-top: 3em;
   margin-right: auto;
-  background-image: url("/assets/index-logo.png");
-  background-color: rgba(255, 255, 255, 0.84);
-  background-size: 95%;
-  background-repeat: no-repeat;
-  background-position: center 1em; }
-  #content.index #page #text {
-    font-family: sans-serif;
-    line-height: 1.4;
-    color: black; }
-    #content.index #page #text p {
-      text-align: center; }
-      #content.index #page #text p:first-child {
-        font-size: 175%;
-        padding-top: 7em; }
-      #content.index #page #text p:nth-child(2) img {
-        margin: 0 auto;
-        width: 15%; }
+  margin-left: auto;
+  width: 60em;
+  height: 5em; }
+  #content #navigation ul li {
+    float: left;
+    margin-right: 4em;
+    margin-left: 4em;
+    height: 3em; }
+    #content #navigation ul li.current a {
+      border-bottom: 5px solid #7de7c8; }
+    #content #navigation ul li a {
+      color: black;
+      text-decoration: initial;
+      font-size: 1.3em;
+      padding-bottom: .5em; }
 /* Caligari CSS Manifest
  *
 

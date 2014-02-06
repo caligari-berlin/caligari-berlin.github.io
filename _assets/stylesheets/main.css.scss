@@ -1,7 +1,16 @@
 /* html, body { height: 100%; } */
 
 #content {
-    &.index {
+    #page {
+	display: block;
+	width: 70em;
+	height: 20em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	background-color: hsla(360, 100%, 100%, 0.84);
+    }
+    &.home {
 	#logo {
 	    display: block;
 	    width: 70em;
@@ -13,37 +22,29 @@
 	    background-image: url("/assets/HOMElogo.png");
 	    background-repeat: no-repeat;
 	    background-position: center 1em;
-
 	}
-	#page {
-	    position: relative;
-	    padding-bottom: 1em;
-	    width: 75%;
-	    margin-top: 10%;
-	    margin-left: auto;
-	    margin-right: auto;
+    }
+    #navigation {
+	margin-top: 3em;
+	margin-right: auto;
+	margin-left: auto;
+	width: 60em;
+	height: 5em;
+	ul {
+	    li {
+		float: left;
+		margin-right: 4em;
+		margin-left: 4em;
+		height: 3em;
+		&.current {
+		   a { border-bottom: 5px solid rgb(125, 231, 200); }
+		}
+		a {
+		    color: black;
+		    text-decoration: initial;
+		    font-size: 1.3em;
+		    padding-bottom: .5em;
 
-	    background-image: url("/assets/index-logo.png");
-	    background-color: hsla(360, 100%, 100%, 0.84); //rgba(225, 225, 225, .70);
-	    background-size: 95%;
-	    background-repeat: no-repeat;
-	    background-position: center 1em;
-	    #text {
-		font-family: sans-serif;
-		line-height: 1.4;
-		color: black;
-		p {
-		    text-align: center;
-		    &:first-child {
-			font-size: 175%;
-			padding-top: 7em;
-		    }
-		    &:nth-child(2) {
-			img {
-			    margin: 0 auto;
-			    width: 15%;
-			}
-		    }
 		}
 	    }
 	}

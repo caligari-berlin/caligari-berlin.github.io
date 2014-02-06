@@ -7,9 +7,15 @@
       %meta{asset_path: "{% asset_path HOMEsfondo1.jpg %}"}
       %meta{asset_path: "{% asset_path HOMEsfondo2.jpg %}"}
       %meta{asset_path: "{% asset_path HOMEsfondo3.jpg %}"}
+      %meta{asset_path: "{% asset_path ABOUTsfondo1.jpg %}"}
+      %meta{asset_path: "{% asset_path ABOUTsfondo2.jpg %}"}
+      %meta{asset_path: "{% asset_path ABOUTsfondo3.jpg %}"}
+      %meta{asset_path: "{% asset_path CONTACTsfondo1.jpg %}"}
+      %meta{asset_path: "{% asset_path CONTACTsfondo2.jpg %}"}
+      %meta{asset_path: "{% asset_path CONTACTsfondo3.jpg %}"}
       %meta{asset_path: "{% asset_path HOMElogo.png %}"}
     - else
       = "{% include assets.html %}"
     %title= "Caligari <> {{page.title}}"
   %body
-    #content{class: "{{page.path | split: '.' | first }}", data: {bg_images:  "{{page.bg_images | join }}", bg_duration: "{{page.bg_duration}}", bg_fade: "{{page.bg_fade}}"}}= "{{content}}"
+    #content{class: "{{page.title}}", data: {bg_images:  "{{page.bg_images | join }}", bg_duration: "{{page.bg_duration}}", bg_fade: "{{page.bg_fade}}", current: "{{page.title}}"}}= "{{content}}"

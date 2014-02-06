@@ -28,7 +28,7 @@
     load: function() {
       var page;
       console.log("booting caligari -- and really wow!");
-      return page = new Caligari.Page($("#content").attr('class'));
+      return page = new Caligari.Page($("#content").data('current'));
     }
   };
 
@@ -39,12 +39,14 @@
       var bgOptions, bgs;
       this.pageId = pageId;
       this.contentEl = $("#content");
+      this.navigationEl = $("#navigation");
+      this.updateNavigation();
       bgs = this.contentEl.data('bg-images').split(" ");
       bgOptions = {
         duration: this.contentEl.data('bg-duration'),
         fade: this.contentEl.data('bg-fade')
       };
-      console.log(bgs, bgOptions);
+      console.log(bgs, bgOptions, this.pageId);
       if (_.size(bgs) !== 1) {
         $.backstretch(this.prefix(bgs), bgOptions);
       } else {
@@ -60,6 +62,11 @@
         _results.push("/assets/" + fileName);
       }
       return _results;
+    };
+
+    Page.prototype.updateNavigation = function() {
+      $("li", this.navigationEl).removeClass('current');
+      return $("li[data-title='" + this.pageId + "']", this.navigationEl).addClass('current');
     };
 
     return Page;

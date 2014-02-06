@@ -1,0 +1,4 @@
+---
+title: news
+layout: page
+---

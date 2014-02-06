@@ -1,4 +1,2 @@
 safe: true
-keep_files:
-  - assets
-  - .git
+relative_permalinks: true
