@@ -1,5 +1,5 @@
 %ul
-  - ordered_pages = %w(home about contacts news).map {|title| pages.detect {|page| page.data['title'] == title }}
+  - ordered_pages = %w(home about contacts).map {|title| pages.detect {|page| page.data['title'] == title }}
   - ordered_pages.each do |page|
     %li{data: {title: page.data['title']}}
       %a{href: page.url.sub('index.html', '')}= page.data['title'].upcase

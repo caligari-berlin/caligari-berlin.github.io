@@ -828,14 +828,6 @@ table {
     border-spacing: 0;
 }
 /* html, body { height: 100%; } */
-#content #page {
-  display: block;
-  width: 70em;
-  height: 20em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3em;
-  background-color: rgba(255, 255, 255, 0.84); }
 #content.home #logo {
   display: block;
   width: 70em;
@@ -846,6 +838,29 @@ table {
   background-image: url("/assets/HOMElogo.png");
   background-repeat: no-repeat;
   background-position: center 1em; }
+#content #page {
+  display: block;
+  width: 60em;
+  height: 25em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  background-color: rgba(255, 255, 255, 0.84); }
+  #content #page.about {
+    box-sizing: border-box;
+    padding: 3em;
+    text-align: justify;
+    line-height: 1em; }
+  #content #page.contacts {
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    background-image: url("/assets/CONTACTlogo.png");
+    background-size: cover;
+    background-repeat: no-repeat; }
+    #content #page.contacts p:first-child {
+      padding-top: 12em; }
+    #content #page.contacts p {
+      margin-bottom: 1em; }
 #content #navigation {
   margin-top: 3em;
   margin-right: auto;
@@ -854,12 +869,14 @@ table {
   height: 5em; }
   #content #navigation ul li {
     float: left;
-    margin-right: 4em;
-    margin-left: 4em;
+    width: 32%;
     height: 3em; }
     #content #navigation ul li.current a {
       border-bottom: 5px solid #7de7c8; }
     #content #navigation ul li a {
+      letter-spacing: .2em;
+      display: table;
+      margin: auto auto;
       color: black;
       text-decoration: initial;
       font-size: 1.3em;

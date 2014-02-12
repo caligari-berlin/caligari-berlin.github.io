@@ -82,7 +82,8 @@ module Jekyll
 
     def haml_context
       _site = OpenStruct.new(@site.config)
-      OpenStruct.new(site: _site, pages: @site.pages)
+      _pages = @site.pages
+      context = OpenStruct.new(site: _site, pages: _pages, posts: @site.posts)
     end
 
     def html_file(file, dir)
