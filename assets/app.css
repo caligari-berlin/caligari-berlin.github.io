@@ -828,6 +828,8 @@ table {
     border-spacing: 0;
 }
 /* html, body { height: 100%; } */
+#content a {
+  text-decoration: initial; }
 #content.home #logo {
   display: block;
   width: 70em;
@@ -839,7 +841,7 @@ table {
   background-repeat: no-repeat;
   background-position: center 1em; }
 #content #page {
-  display: block;
+  box-sizing: border-box;
   width: 60em;
   height: 25em;
   margin-left: auto;
@@ -847,20 +849,28 @@ table {
   margin-top: 3em;
   background-color: rgba(255, 255, 255, 0.84); }
   #content #page.about {
-    box-sizing: border-box;
     padding: 3em;
+    line-height: 1.4em;
+    text-align: justify; }
+  #content #page.contacts a {
+    display: inline-block; }
+    #content #page.contacts a.map {
+      right: 0;
+      position: absolute; }
+  #content #page.contacts #text {
+    line-height: 1.4em;
+    padding-top: 3em;
+    position: relative;
+    margin: 0 auto;
     text-align: justify;
-    line-height: 1em; }
-  #content #page.contacts {
-    background-color: rgba(255, 255, 255, 0.2);
-    text-align: center;
+    width: 11.5em; }
+  #content #page.contacts #contacts_logo {
+    margin: 0 auto 2em;
+    width: 11.5em;
+    height: 6em;
     background-image: url("/assets/CONTACTlogo.png");
     background-size: cover;
     background-repeat: no-repeat; }
-    #content #page.contacts p:first-child {
-      padding-top: 12em; }
-    #content #page.contacts p {
-      margin-bottom: 1em; }
 #content #navigation {
   margin-top: 3em;
   margin-right: auto;
@@ -879,7 +889,7 @@ table {
       margin: auto auto;
       color: black;
       text-decoration: initial;
-      font-size: 1.3em;
+      font-size: 1.2em;
       padding-bottom: .5em; }
 /* Caligari CSS Manifest
  *

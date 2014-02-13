@@ -1,5 +1,8 @@
 /* html, body { height: 100%; } */
 #content {
+    a {
+	text-decoration: initial;
+    }
     &.home {
 	#logo {
 	    display: block;
@@ -15,7 +18,7 @@
 	}
     }
     #page {
-	display: block;
+	box-sizing: border-box;
 	width: 60em;
 	height: 25em;
 	margin-left: auto;
@@ -23,20 +26,31 @@
 	margin-top: 3em;
 	background-color: hsla(360, 100%, 100%, 0.84);
 	&.about {
-	    box-sizing: border-box;
 	    padding: 3em;
+	    line-height: 1.4em;
 	    text-align: justify;
-	    line-height: 1em;
 	}
 	&.contacts {
-	    background-color: hsla(360, 100%, 100%, 0.20);
-	    text-align: center;
-	    background-image: url("/assets/CONTACTlogo.png");
-	    background-size: cover;
-	    background-repeat: no-repeat;
-	    //background-position-x: 140px;
-	    p:first-child { padding-top: 12em; }
-	    p { margin-bottom: 1em; }
+	    a {
+		display: inline-block;
+		&.map { right: 0; position: absolute; }
+	    }
+	    #text {
+		line-height: 1.4em;
+		padding-top: 3em;
+		position: relative;
+		margin: 0 auto;
+		text-align: justify;
+		width: 11.5em;
+	    }
+	    #contacts_logo {
+		margin: 0 auto 2em;
+		width: 11.5em;
+		height: 6em;
+		background-image: url("/assets/CONTACTlogo.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+	    }
 	}
     }
     #navigation {
@@ -59,7 +73,7 @@
 		    margin: auto auto;
 		    color: black;
 		    text-decoration: initial;
-		    font-size: 1.3em;
+		    font-size: 1.2em;
 		    padding-bottom: .5em;
 		}
 	    }
