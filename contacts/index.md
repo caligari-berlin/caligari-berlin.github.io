@@ -6,10 +6,10 @@ bg_images:
   - CONTACTsfondo2.jpg
   - CONTACTsfondo3.jpg
 bg_duration: 4000
-bg_fade: 10
+bg_fade: 500
 ---
 
-di-fr: 9-19, sa-so: 11-19
+di&gt;fr: 9-19, sa&gt;so: 11-19
 Kienitzer Str. 110 Berlin
 caligariberlin@gmail.com
 T: +49 (0)30 52649841

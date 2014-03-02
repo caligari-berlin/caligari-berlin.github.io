@@ -6,7 +6,7 @@ bg_images:
   - ABOUTsfondo2.jpg
   - ABOUTsfondo3.jpg
 bg_duration: 4000
-bg_fade: 10
+bg_fade: 500
 ---
 
 Coming soon …

@@ -17,6 +17,7 @@
 	    background-position: center 1em;
 	}
     }
+
     #page {
 	box-sizing: border-box;
 	width: 60em;
@@ -25,16 +26,19 @@
 	margin-right: auto;
 	margin-top: 3em;
 	background-color: hsla(360, 100%, 100%, 0.84);
+
 	&.about {
 	    padding: 3em;
 	    line-height: 1.4em;
 	    text-align: justify;
 	}
+
 	&.contacts {
 	    a {
 		display: inline-block;
 		&.map { right: 0; position: absolute; }
 	    }
+
 	    #text {
 		line-height: 1.4em;
 		padding-top: 3em;
@@ -43,6 +47,7 @@
 		text-align: justify;
 		width: 11.5em;
 	    }
+
 	    #contacts_logo {
 		margin: 0 auto 2em;
 		width: 11.5em;
@@ -53,6 +58,7 @@
 	    }
 	}
     }
+
     #navigation {
 	margin-top: 3em;
 	margin-right: auto;
