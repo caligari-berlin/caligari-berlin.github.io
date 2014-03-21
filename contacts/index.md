@@ -14,7 +14,8 @@ published: true
 Kienitzer Str. 110
 Berlin
 caligariberlin@gmail.com
-mo: geschlossen
+T: +49 (0)30 52649841
+
+mo: geschlossen  
 di-so: 11-22 
 
-T: +49 (0)30 52649841
