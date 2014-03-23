@@ -1,9 +1,10 @@
 !!!5
 %html
   %head
+    %meta{'http-equiv' => 'Content-Type', 'content' => 'text/html; charset=utf-8'}
     - if site.assets_dev
-      = "{{ 'app' | javascript }}"
-      = "{{ 'app' | stylesheet }}"
+      {{ 'app' | javascript }}
+      {{ 'app' | stylesheet }}
       %meta{asset_path: "{% asset_path HOMEsfondo1.jpg %}"}
       %meta{asset_path: "{% asset_path HOMEsfondo2.jpg %}"}
       %meta{asset_path: "{% asset_path HOMEsfondo3.jpg %}"}
