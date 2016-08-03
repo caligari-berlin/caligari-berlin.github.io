@@ -14,7 +14,7 @@ Kienitzer Straße 110
 [MAP](https://goo.gl/maps/pzdqPVSqQTG2)  
 
 caligariberlin@gmail.com  
-Phone: +49 (0)30 52649841  
+T: +49 (0)30 52649841  
 mo-so: 18-23  
 
 Follow our latest news on  
