@@ -9,12 +9,12 @@ bg_fade: 700
 published: true
 ---
 
-Kienitzer Str. 110
-12049 Berlin
+Kienitzer Straße 110
+12049 Berlin, Neukölln
 [MAP](https://goo.gl/maps/pzdqPVSqQTG2)
 
 caligariberlin@gmail.com
-T: +49 (0)30 52649841
+Phone: +49 (0)30 52649841
 mo-so: 18-23
 
 Follow our latest news on [FACEBOOK](http://facebook.com/caligariberlin)
