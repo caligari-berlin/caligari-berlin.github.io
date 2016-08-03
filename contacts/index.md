@@ -17,5 +17,5 @@ caligariberlin@gmail.com
 T: +49 (0)30 52649841  
 mo-so: 18-23  
 
-Folge unsere lätzte News auf  
+Folge unsere News auf  
 [FACEBOOK](http://facebook.com/caligariberlin)
