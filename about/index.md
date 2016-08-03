@@ -14,5 +14,3 @@ CALIGARI ist ein italienisches Bistro.
 
 
 Täglich wechselnd bieten wir einen frisch zubereiteten Menü voll italienischer Spezialitäten  wie Lasagne,  Parmigiana, hausgemachte Nudeln, vegetarischen Angeboten, Suppen und Salaten. 
-
-Bald wird das Programm des CALIGARI Supper Clubs beginnen, als Spielort für kulinarische Experimente, in denen Köche unterschiedlicher Herkunft und Erfahrung eingeladen sind, einzigartige Menus zu kreieren.
