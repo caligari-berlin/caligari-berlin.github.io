@@ -1,4 +1,3 @@
 safe: true
-relative_permalinks: true
 permailnk: /news/:year/:month/:day/:title
 future: true
